@@ -1,46 +1,43 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="X to Markdown 隐私政策。">
-  <title>隐私政策 · X to Markdown</title>
-  <link rel="stylesheet" href="../styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · X to Markdown</title>
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <a class="brand" href="../"><span class="mark">M↓</span><span>X to Markdown</span></a>
-      <nav class="nav" aria-label="主导航"><a href="../">首页</a><a href="../support/">支持</a><a href="./" aria-current="page">隐私</a></nav>
-    </header>
-    <article class="paper prose">
-      <p class="eyebrow">Privacy policy</p>
-      <h1>隐私政策</h1>
-      <p class="meta">生效日期：2026 年 8 月 16 日 · 运营者：王帅</p>
-      <div class="notice">结论：文章处理在你的浏览器本地完成，我们不接收、出售或分析你的帖子内容。</div>
-
-      <h2>处理的信息</h2>
-      <p>扩展仅在用户主动使用时读取当前单条 X 帖子，用于生成 Markdown 或图片 ZIP。处理内容可能包括帖子作者、账号名、发布时间、正文、链接、图片地址和来源地址。</p>
-
-      <h2>处理方式和目的</h2>
-      <p>帖子解析、Markdown 生成、图片整理和 ZIP 打包均在用户设备本地完成，仅用于提供用户主动请求的导出功能。扩展不把帖子内容、Cookie、Token、密码或完整浏览历史上传到运营者服务器。</p>
-
-      <h2>本地存储</h2>
-      <p>扩展使用 Chrome 本地存储保存“是否下载图片”的偏好。该设置不会离开用户设备，可以通过清除扩展数据或卸载扩展删除。</p>
-
-      <h2>第三方网络请求</h2>
-      <p>用户访问帖子时，页面由 X 提供。只有用户选择图片归档后，浏览器才会从 X 的图片域名请求当前帖子的图片。若导出的 Markdown 保留远程图片地址，阅读器打开文件时也可能向相应图片服务器发起请求。</p>
-
-      <h2>数据分享与商业使用</h2>
-      <p>我们不出售用户数据，不将数据用于广告、画像、信用评估或 AI 模型训练，不允许人工读取用户的帖子数据，也不将这些信息提供给第三方。</p>
-
-      <h2>Limited Use</h2>
-      <p>本扩展对信息的使用遵守 Chrome Web Store 用户数据政策及 Limited Use 要求。数据只用于提供或改进扩展明确说明的单一用途，不用于无关目的。</p>
-
-      <h2>政策变更与联系</h2>
-      <p>如数据处理方式发生实质变化，我们会更新本政策和 Chrome Web Store 隐私声明，并在需要时取得用户同意。隐私问题请通过<a href="../support/">支持页面</a>联系。请勿在公开 Issue 中提交 Cookie、Token、身份证件或其他敏感信息。</p>
-    </article>
-    <footer class="footer">© 2026 Wang Shuai</footer>
-  </main>
+<main class="shell">
+<header class="topbar">
+<a class="brand" href="../">
+<span class="mark">M↓</span>
+<span>X to Markdown</span>
+</a>
+<nav class="nav" aria-label="Navigation">
+<a href="../">Home / 首页</a>
+<a href="../support/">Support / 帮助</a>
+<a href="../privacy/">Privacy / 隐私</a>
+</nav>
+</header>
+<article class="paper prose">
+<h1>Privacy policy / 隐私政策</h1>
+<p>Effective date: 2026-10-05. This document describes the verified 0.4.0 release candidate, not later development builds.</p>
+<p>X to Markdown stores posts you actively save and posts imported from your own bookmarks and likes in the extension’s local IndexedDB. Records may include post text, author names and handles, dates, source URLs, media links and source/tag annotations. UI preferences, synchronization progress and account/source incremental boundaries are stored locally in the browser.</p>
+<p>Bookmark and like synchronization begins only when you request it. The extension drives the corresponding X page and reads permitted responses already returned to that page by X’s own client. It does not read or retain account cookies, tokens or login credentials, and does not send post content, post URLs or browsing history to a product server.</p>
+<p>Requested image exports download images from X’s image servers. X receives normal requests under its own privacy practices. Exported documents may retain remote media URLs; opening them in a reader can make further network requests. Videos are preserved as source links and covers, not downloaded video files.</p>
+<p>Your library stays in your browser until you delete records, clear extension data or uninstall the extension. Exports, JSON backups and notes written to a selected Obsidian vault remain in the locations you choose until you delete them. Extension deletion does not remove separately saved files. Your vault or backup folder may be synchronized by services you configure independently.</p>
+<p>No analytics, advertising, sale of personal data, payment or activation service is included in this release. Information is used only for the requested collection, organization, synchronization and export features. Only save and reuse content you are authorized to access.</p>
+<h2>简体中文</h2>
+<p>生效日期：2026年10月5日。本说明适用于0.4.0发布版本；旧版仅提供单帖导出，不具备新增文章库和同步功能。</p>
+<p>你主动保存或从自己的书签、点赞同步的帖子保存在扩展本地IndexedDB，包括作者、账号名、时间、正文、来源链接、媒体地址、标签和来源标记。界面设置、同步状态及按账号和来源区分的增量边界保存在浏览器本地。</p>
+<p>同步由你主动开始，通过X页面加载可见内容并读取X客户端返回的数据。扩展不读取或保存Cookie、Token、密码，不向产品服务器上传帖子内容、帖子链接或浏览历史。本版本不包含统计、广告、支付或激活服务，不出售个人数据。</p>
+<p>图片导出会访问X图片服务器；导出文件若保留远程媒体地址，阅读器打开时可能发起网络请求。视频只保留链接和封面。选定的目录、Obsidian仓库若被你配置的其他服务同步，按这些服务自己的规则处理。</p>
+<p>文章库记录可在库内删除；清除扩展数据或卸载扩展可删除本地存储。单独导出的文件、备份和Obsidian笔记需在对应位置自行删除。卸载扩展不会自动删除这些文件。</p>
+<h2>Limited Use and contact / 使用范围与联系</h2>
+<p>Data is used only for the described collection, library and export features, in accordance with the Chrome Web Store User Data Policy and Limited Use requirements. / 数据只用于上述采集、文章库和导出功能，遵守Chrome Web Store用户数据政策及Limited Use要求。</p>
+<p>For privacy questions, use the <a href="../support/">support page</a>. Do not post credentials or private content in public issues. / 隐私问题请通过支持页反馈，不要在公开Issue中提交凭据或私人内容。</p>
+</article>
+<footer class="footer">X to Markdown is independent and is not affiliated with X. / 独立产品，与 X 无隶属关系。</footer>
+</main>
 </body>
 </html>
