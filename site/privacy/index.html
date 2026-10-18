@@ -21,16 +21,18 @@
 </header>
 <article class="paper prose">
 <h1>Privacy policy / 隐私政策</h1>
-<p>Effective date: 2026-10-15. This policy covers the published 0.4.0 extension and the 0.4.1 naming update; it does not describe later development builds.</p>
+<p>Effective date: 2026-10-18. Applies to X Library 0.5.0. Earlier versions may use page-driven imports without background cookie access.</p>
 <p>X Library (formerly X to Markdown) stores posts you actively save and posts imported from your own bookmarks and likes in the extension’s local IndexedDB. Records may include post text, author names and handles, dates, source URLs, media links and source/tag annotations. UI preferences, synchronization progress and account/source incremental boundaries are stored locally in the browser.</p>
-<p>Bookmark and like synchronization begins only when you request it. The extension drives the corresponding X page and reads permitted responses already returned to that page by X’s own client. It does not read or retain account cookies, tokens or login credentials, and does not send post content, post URLs or browsing history to a product server.</p>
+<p>Bookmark and like synchronization begins only when you request it. Background imports temporarily read your current x.com session identity and CSRF cookie in memory to request your own bookmarks and likes directly from x.com. The authentication cookie is checked only for its presence; values are not retained, logged, exported or sent to a product server. X receives normal authenticated requests under its own privacy practices. Post content, post URLs and browsing history are not uploaded to a product server.</p>
+<p>The extension downloads public X client metadata and request-verification material from abs.twimg.com. Downloaded scripts are parsed as text data and are never executed. A one-time browser alarm may resume a task you started after X rate limiting; manually pausing or stopping cancels that retry. There is no periodic automatic collection in this release.</p>
 <p>Requested image exports download images from X’s image servers. X receives normal requests under its own privacy practices. Exported documents may retain remote media URLs; opening them in a reader can make further network requests. Videos are preserved as source links and covers, not downloaded video files.</p>
 <p>Your library stays in your browser until you delete records, clear extension data or uninstall the extension. Exports, JSON backups and notes written to a selected Obsidian vault remain in the locations you choose until you delete them. Extension deletion does not remove separately saved files. Your vault or backup folder may be synchronized by services you configure independently.</p>
 <p>No analytics, advertising, sale of personal data, payment or activation service is included in this release. Information is used only for the requested collection, organization, synchronization and export features. Only save and reuse content you are authorized to access.</p>
 <h2>简体中文</h2>
-<p>生效日期：2026年10月15日。本说明适用于已发布的0.4.0版本及仅调整名称的0.4.1更新，不包括后续开发中的版本。</p>
+<p>生效日期：2026年10月18日。本说明适用于 X Library 0.5.0；较早版本可能仅通过页面驱动同步，不具备后台 Cookie 访问。</p>
 <p>你主动保存或从自己的书签、点赞同步的帖子保存在扩展本地IndexedDB，包括作者、账号名、时间、正文、来源链接、媒体地址、标签和来源标记。界面设置、同步状态及按账号和来源区分的增量边界保存在浏览器本地。</p>
-<p>同步由你主动开始，通过X页面加载可见内容并读取X客户端返回的数据。扩展不读取或保存Cookie、Token、密码，不向产品服务器上传帖子内容、帖子链接或浏览历史。本版本不包含统计、广告、支付或激活服务，不出售个人数据。</p>
+<p>同步由你主动开始。后台同步临时在内存读取当前 x.com 登录身份和 CSRF Cookie，仅向 x.com 请求你自己的书签与点赞；认证 Cookie 只检查是否存在，不保留其值。Cookie 值不落库、不记录、不导出、不发送给产品服务器。X 按自身隐私规则接收正常会话请求；帖子内容、链接和浏览历史不上传到产品服务器。扩展不要求你提供密码。本版本不包含统计、广告、支付或激活服务，不出售个人数据。</p>
+<p>扩展从 abs.twimg.com 下载 X 官方公开客户端元数据和请求验证材料，将下载脚本作为文本数据解析，不执行远程脚本。限流后可用一次性闹钟恢复你已开始的任务；手动暂停或停止会取消恢复，本版本不进行周期自动采集。</p>
 <p>图片导出会访问X图片服务器；导出文件若保留远程媒体地址，阅读器打开时可能发起网络请求。视频只保留链接和封面。选定的目录、Obsidian仓库若被你配置的其他服务同步，按这些服务自己的规则处理。</p>
 <p>文章库记录可在库内删除；清除扩展数据或卸载扩展可删除本地存储。单独导出的文件、备份和Obsidian笔记需在对应位置自行删除。卸载扩展不会自动删除这些文件。</p>
 <h2>Limited Use and contact / 使用范围与联系</h2>
